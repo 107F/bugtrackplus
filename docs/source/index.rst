@@ -16,3 +16,4 @@ BugTrack+ is a CLI bug bounty logger built in Python...
    bug
    logger
    project
+   test_project
