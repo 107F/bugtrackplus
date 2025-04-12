@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BugTrack+ &mdash; BugTrack+ 1.0 documentation</title>
+  <title>BugTrack+ Docs &mdash; BugTrack+ 1.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
@@ -18,7 +18,8 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bug module" href="bug.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,36 +41,13 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">BugTrack+</a><ul>
-<li><a class="reference internal" href="#a-coroutine-based-bug-bounty-logger-with-cli-validation-and-regular-expressions">A Coroutine-Based Bug Bounty Logger with CLI, Validation, and Regular Expressions</a></li>
-<li><a class="reference internal" href="#description">📖 Description</a></li>
-<li><a class="reference internal" href="#getting-started">🚀 Getting Started</a><ul>
-<li><a class="reference internal" href="#installation">Installation</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Modules:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bug.html">bug module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">logger module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">project module</a></li>
 </ul>
-</li>
-<li><a class="reference internal" href="#usage">🛠 Usage</a><ul>
-<li><a class="reference internal" href="#command-line-interface-cli">Command-Line Interface (CLI)</a></li>
-<li><a class="reference internal" href="#interactive-mode">Interactive Mode</a></li>
-<li><a class="reference internal" href="#output">Output</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#features">✨ Features</a><ul>
-<li><a class="reference internal" href="#coroutine-driven-logging">🌀 Coroutine-Driven Logging</a></li>
-<li><a class="reference internal" href="#input-validation">🔍 Input Validation</a></li>
-<li><a class="reference internal" href="#cli-interactive-modes">📟 CLI &amp; Interactive Modes</a></li>
-<li><a class="reference internal" href="#testing">🧪 Testing</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#project-structure">📂 Project Structure</a></li>
-<li><a class="reference internal" href="#cs50-concepts-demonstrated">🎓 CS50 Concepts Demonstrated</a></li>
-<li><a class="reference internal" href="#future-enhancements">🔜 Future Enhancements</a></li>
-<li><a class="reference internal" href="#notes">📝 Notes</a></li>
-</ul>
-</li>
-</ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -84,7 +62,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">BugTrack+</li>
+      <li class="breadcrumb-item active">BugTrack+ Docs</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -94,15 +72,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="bugtrack">
-<h1>BugTrack+<a class="headerlink" href="#bugtrack" title="Link to this heading"></a></h1>
+  <section id="bugtrack-docs">
+<h1>BugTrack+ Docs<a class="headerlink" href="#bugtrack-docs" title="Link to this heading"></a></h1>
+<p>BugTrack+ is a CLI bug bounty logger built in Python…</p>
+<section id="bugtrack">
+<h2>BugTrack+<a class="headerlink" href="#bugtrack" title="Link to this heading"></a></h2>
 <section id="a-coroutine-based-bug-bounty-logger-with-cli-validation-and-regular-expressions">
-<h2>A Coroutine-Based Bug Bounty Logger with CLI, Validation, and Regular Expressions<a class="headerlink" href="#a-coroutine-based-bug-bounty-logger-with-cli-validation-and-regular-expressions" title="Link to this heading"></a></h2>
+<h3>A Coroutine-Based Bug Bounty Logger with CLI, Validation, and Regular Expressions<a class="headerlink" href="#a-coroutine-based-bug-bounty-logger-with-cli-validation-and-regular-expressions" title="Link to this heading"></a></h3>
 <p><strong>Video Demo</strong>: https://youtu.be/BTLqI3mve8Q</p>
 </section>
 <hr class="docutils" />
 <section id="description">
-<h2>📖 Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<h3>📖 Description<a class="headerlink" href="#description" title="Link to this heading"></a></h3>
 <p><strong>BugTrack+</strong> is a Python tool designed to simulate logging security vulnerabilities during penetration testing and bug bounty programs. Developed as a final project for Harvard’s <a class="reference external" href="https://cs50.harvard.edu/python/">CS50’s Introduction to Programming with Python</a>, it emphasizes core Python concepts while providing a structured workflow for tracking findings.</p>
 <p>Key highlights:</p>
 <ul class="simple">
@@ -114,9 +95,9 @@
 </section>
 <hr class="docutils" />
 <section id="getting-started">
-<h2>🚀 Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<h3>🚀 Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h3>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h3>
+<h4>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h4>
 <ol class="arabic">
 <li><p>Clone the repository:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/yourusername/BugTrackPlus.git
@@ -133,16 +114,16 @@
 </section>
 <hr class="docutils" />
 <section id="usage">
-<h2>🛠 Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<h3>🛠 Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h3>
 <section id="command-line-interface-cli">
-<h3>Command-Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Link to this heading"></a></h3>
+<h4>Command-Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Link to this heading"></a></h4>
 <p>Log a bug directly via CLI:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>project.py<span class="w"> </span>--log<span class="w"> </span>--target<span class="w"> </span>example.com<span class="w"> </span>--endpoint<span class="w"> </span>/login<span class="w"> </span>--vuln_type<span class="w"> </span><span class="s2">&quot;SQLi&quot;</span><span class="w"> </span>--severity<span class="w"> </span>critical
 </pre></div>
 </div>
 </section>
 <section id="interactive-mode">
-<h3>Interactive Mode<a class="headerlink" href="#interactive-mode" title="Link to this heading"></a></h3>
+<h4>Interactive Mode<a class="headerlink" href="#interactive-mode" title="Link to this heading"></a></h4>
 <p>Run without arguments to input data interactively:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>project.py
 </pre></div>
@@ -150,7 +131,7 @@
 <p>Follow prompts to enter bug details.</p>
 </section>
 <section id="output">
-<h3>Output<a class="headerlink" href="#output" title="Link to this heading"></a></h3>
+<h4>Output<a class="headerlink" href="#output" title="Link to this heading"></a></h4>
 <p>Data is saved to <code class="docutils literal notranslate"><span class="pre">bugs.csv</span></code> with columns:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Timestamp</span></code>, <code class="docutils literal notranslate"><span class="pre">Target</span></code>, <code class="docutils literal notranslate"><span class="pre">Endpoint</span></code>, <code class="docutils literal notranslate"><span class="pre">Vulnerability</span> <span class="pre">Type</span></code>, <code class="docutils literal notranslate"><span class="pre">Severity</span></code></p></li>
@@ -159,16 +140,16 @@
 </section>
 <hr class="docutils" />
 <section id="features">
-<h2>✨ Features<a class="headerlink" href="#features" title="Link to this heading"></a></h2>
+<h3>✨ Features<a class="headerlink" href="#features" title="Link to this heading"></a></h3>
 <section id="coroutine-driven-logging">
-<h3>🌀 Coroutine-Driven Logging<a class="headerlink" href="#coroutine-driven-logging" title="Link to this heading"></a></h3>
+<h4>🌀 Coroutine-Driven Logging<a class="headerlink" href="#coroutine-driven-logging" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Utilizes Python generators (<code class="docutils literal notranslate"><span class="pre">yield</span></code>, <code class="docutils literal notranslate"><span class="pre">send()</span></code>) to keep the CSV file stream open, enabling efficient writes.</p></li>
 <li><p>Logger remains stateful, reducing overhead for frequent entries.</p></li>
 </ul>
 </section>
 <section id="input-validation">
-<h3>🔍 Input Validation<a class="headerlink" href="#input-validation" title="Link to this heading"></a></h3>
+<h4>🔍 Input Validation<a class="headerlink" href="#input-validation" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p><strong>Target Domain</strong>: Validates format (e.g., <code class="docutils literal notranslate"><span class="pre">sub.example.com</span></code>) using regex.</p></li>
 <li><p><strong>Severity</strong>: Ensures value is <code class="docutils literal notranslate"><span class="pre">low</span></code>, <code class="docutils literal notranslate"><span class="pre">medium</span></code>, <code class="docutils literal notranslate"><span class="pre">high</span></code>, or <code class="docutils literal notranslate"><span class="pre">critical</span></code>.</p></li>
@@ -177,14 +158,14 @@
 </ul>
 </section>
 <section id="cli-interactive-modes">
-<h3>📟 CLI &amp; Interactive Modes<a class="headerlink" href="#cli-interactive-modes" title="Link to this heading"></a></h3>
+<h4>📟 CLI &amp; Interactive Modes<a class="headerlink" href="#cli-interactive-modes" title="Link to this heading"></a></h4>
 <ul class="simple">
 <li><p>Supports both quick logging (CLI) and step-by-step input (interactive).</p></li>
 <li><p>Built with <code class="docutils literal notranslate"><span class="pre">argparse</span></code> for robust argument handling.</p></li>
 </ul>
 </section>
 <section id="testing">
-<h3>🧪 Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h3>
+<h4>🧪 Testing<a class="headerlink" href="#testing" title="Link to this heading"></a></h4>
 <p>Run tests with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>test_project.py
 </pre></div>
@@ -199,7 +180,7 @@
 </section>
 <hr class="docutils" />
 <section id="project-structure">
-<h2>📂 Project Structure<a class="headerlink" href="#project-structure" title="Link to this heading"></a></h2>
+<h3>📂 Project Structure<a class="headerlink" href="#project-structure" title="Link to this heading"></a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BugTrack+
 ├── bug.py               # BugReport class (validation logic)
 ├── logger.py            # Coroutine logger (CSV writer)
@@ -212,7 +193,7 @@
 </section>
 <hr class="docutils" />
 <section id="cs50-concepts-demonstrated">
-<h2>🎓 CS50 Concepts Demonstrated<a class="headerlink" href="#cs50-concepts-demonstrated" title="Link to this heading"></a></h2>
+<h3>🎓 CS50 Concepts Demonstrated<a class="headerlink" href="#cs50-concepts-demonstrated" title="Link to this heading"></a></h3>
 <p>This project incorporates concepts taught in CS50P:</p>
 <ul class="simple">
 <li><p><strong>Generators &amp; Coroutines</strong>: <code class="docutils literal notranslate"><span class="pre">yield</span></code>, <code class="docutils literal notranslate"><span class="pre">send()</span></code>, and streaming data.</p></li>
@@ -226,7 +207,7 @@
 </section>
 <hr class="docutils" />
 <section id="future-enhancements">
-<h2>🔜 Future Enhancements<a class="headerlink" href="#future-enhancements" title="Link to this heading"></a></h2>
+<h3>🔜 Future Enhancements<a class="headerlink" href="#future-enhancements" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Export logs to JSON/PDF.</p></li>
 <li><p>Filter logs by severity or domain.</p></li>
@@ -236,18 +217,43 @@
 </section>
 <hr class="docutils" />
 <section id="notes">
-<h2>📝 Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h2>
+<h3>📝 Notes<a class="headerlink" href="#notes" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>This tool is a <strong>simulation</strong> for educational purposes.</p></li>
 <li><p>Coroutines were chosen to demonstrate Python’s lesser-used features, though higher-level libraries might be preferred in production.</p></li>
 </ul>
 </section>
 </section>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Modules:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="bug.html">bug module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bug.html#bug.BugReport"><code class="docutils literal notranslate"><span class="pre">BugReport</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="bug.html#bug.InvalidBugError"><code class="docutils literal notranslate"><span class="pre">InvalidBugError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logger.html">logger module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logger.html#logger.bug_logger"><code class="docutils literal notranslate"><span class="pre">bug_logger()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">project module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project.html#project.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#project.make_bug_data"><code class="docutils literal notranslate"><span class="pre">make_bug_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#project.prompt_input"><code class="docutils literal notranslate"><span class="pre">prompt_input()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#project.validate_severity"><code class="docutils literal notranslate"><span class="pre">validate_severity()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bug.html" class="btn btn-neutral float-right" title="bug module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
